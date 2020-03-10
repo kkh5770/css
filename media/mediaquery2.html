@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="kt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      .flexbg .left {
+        background: salmon;
+        order: 1;
+        padding: 25px;
+      }
+      .flexbg .right {
+        background: sandybrown;
+        padding: 25px;
+        order: 3;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .left {
+          width: 100%;
+          order: 2;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem
+          saepe aperiam! Exercitationem fugiat dolores tempore. In reprehenderit
+          odit nisi commodi provident beatae numquam aperiam molestiae, debitis
+          a eos eius velit deleniti placeat est perspiciatis non eum atque
+          quisquam culpa ratione aliquid eveniet vel? Nihil adipisci fugit
+          maxime at mollitia, voluptatibus eligendi saepe eius ipsa expedita
+          sunt ad nesciunt quasi molestias vel possimus eveniet sint quas libero
+          quam modi autem ea fuga! Sint quos fugiat perferendis laboriosam,
+          adipisci molestiae necessitatibus magnam fugit facere fuga ipsum
+          repellendus, reiciendis pariatur iure optio. Consectetur quos
+          obcaecati quidem unde dignissimos a veritatis ullam soluta?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem
+          saepe aperiam! Exercitationem fugiat dolores tempore. In reprehenderit
+          odit nisi commodi provident beatae numquam aperiam molestiae, debitis
+          a eos eius velit deleniti placeat est perspiciatis non eum atque
+          quisquam culpa ratione aliquid eveniet vel? Nihil adipisci fugit
+          maxime at mollitia, voluptatibus eligendi saepe eius ipsa expedita
+          sunt ad nesciunt quasi molestias vel possimus eveniet sint quas libero
+          quam modi autem ea fuga! Sint quos fugiat perferendis laboriosam,
+          adipisci molestiae necessitatibus magnam fugit facere fuga ipsum
+          repellendus, reiciendis pariatur iure optio. Consectetur quos
+          obcaecati quidem unde dignissimos a veritatis ullam soluta?
+        </p>
+      </main>
+      <aside class="sidebar left">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium,
+        debitis quisquam tempora vel in perspiciatis velit repellendus eius
+      </aside>
+      <aside class="sidebar right">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium,
+        debitis quisquam tempora vel in perspiciatis velit repellendus eius
+      </aside>
+    </div>
+  </body>
+</html>
